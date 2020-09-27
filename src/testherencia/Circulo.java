@@ -3,22 +3,21 @@ package testherencia;
 import java.util.Scanner; 
 
 public class Circulo {
-    private double radio;
-    private double area;
+      protected double radio;
+      protected double area;
     
     public Circulo(){
-        radio = 0;
     }
     
     public Circulo(double r){
         radio = r;
     }
     
-    public double pedir(){
+    public void pedir(){
         System.out.println("Ingrese el valor del radio: ");
         Scanner r = new Scanner(System.in);
         radio = r.nextInt();
-        return radio;
+ 
     }
     
     public double calcularea(){
