@@ -14,8 +14,8 @@ public class Menu {
         System.out.printf("Que vas a calcular?");
         System.out.printf("\n");
         System.out.printf("¿Circulo y esfera? Pon 1\n");
-        System.out.printf("¿Circulo y cono? Pon 2\n");
-        System.out.printf("¿Los tres? Pon 3\n");
+        System.out.printf("¿Circulo , cono y cilindro? Pon 2\n");
+        System.out.printf("¿Los cuatro? Pon 3\n");
         System.out.printf("\n ");
         decision = h.nextInt();
         if (decision == 1) {
@@ -32,7 +32,7 @@ public class Menu {
             v.mostrarV();
         }
         if (decision == 2) {
-            VolumenCono vc = new VolumenCono();
+            VolumenCilindro vc = new VolumenCilindro();
             vc.pedir();  
             vc.pedir1();
             vc.calcularea();
@@ -44,9 +44,16 @@ public class Menu {
             
             vc.volumen();
             vc.mostrarV2();
+            
+            System.out.printf("\n ");
+            System.out.printf("----Cilindro----");
+            System.out.printf("\n ");
+            
+            vc.vCilindro();
+            vc.mostrarvCilindro();
         }
         if (decision == 3) {
-            VolumenCono vc = new VolumenCono();
+            VolumenCilindro vc = new VolumenCilindro();
             vc.pedir();
             vc.pedir1();
             vc.calcularea();
@@ -65,6 +72,13 @@ public class Menu {
             
             vc.volumen();
             vc.mostrarV2();
+            
+            System.out.printf("\n ");
+            System.out.printf("----Cilindro----");
+            System.out.printf("\n ");
+            
+            vc.vCilindro();
+            vc.mostrarvCilindro();
         }
     }
 }

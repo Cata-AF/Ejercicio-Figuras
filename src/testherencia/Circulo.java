@@ -3,8 +3,8 @@ package testherencia;
 import java.util.Scanner; 
 
 public class Circulo {
-      protected double radio;
-      protected double area;
+      private double radio;
+      private double area;
     
     public Circulo(){
     }
@@ -32,4 +32,16 @@ public class Circulo {
     public double getradio(){
         return radio;
     }
+    public void setradio(int r)
+    {
+        radio=r;
+    }
+     public double getarea(){
+        return area;
+    }
+    public void setarea(int a)
+    {
+        area=a;
+    }
 }
+
