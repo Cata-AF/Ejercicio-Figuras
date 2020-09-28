@@ -1,4 +1,3 @@
-
 package testherencia;
 
 public class TestHerencia {

@@ -1,11 +1,11 @@
 package testherencia;
 
- class VolumenCirculo extends Circulo {
-     protected double volumen;  
+ class VolumenEsfera extends Circulo {
+     private double volumen;  
      double CalcularVolumen(){
-        System.out.println(" " + radio);
+        System.out.println(" " + getradio());
         float division = (float) 4/3;
-        volumen = division * Math.PI * Math.pow(radio, 3);
+        volumen = division * Math.PI * Math.pow(getradio(), 3);
         return volumen;
     }
     
