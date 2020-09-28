@@ -15,10 +15,11 @@ public class VolumenCono extends VolumenCirculo{
     }
     
     public double volumen(){
-        vC = (1/3) * Math.PI * Math.pow(radio, 2) * altura;
+        float division = (float) 1/3;
+        vC = division * Math.PI * Math.pow(radio, 2) * altura;
         return vC;
     }
     public void mostrarV2(){
-        System.out.println("Volumen del circulo: " + vC);
+        System.out.println("Volumen del cono: " + vC);
     }
 }
