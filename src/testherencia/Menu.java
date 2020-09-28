@@ -19,6 +19,7 @@ public class Menu {
         System.out.printf("¿Los cuatro? Pon 4\n");
         System.out.printf("\n ");
         decision = h.nextInt();
+        
         if (decision == 1) {
             VolumenCono v = new VolumenCono();
             v.pedir();

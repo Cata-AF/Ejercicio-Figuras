@@ -34,4 +34,8 @@ public class VolumenCono extends VolumenEsfera{
     public double getaltura(){
         return altura;
     }
+    
+       public void setaltura(int h){
+        altura=h;
+    }
 }

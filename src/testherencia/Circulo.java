@@ -44,4 +44,4 @@ public class Circulo {
     public void setarea(int juli2){
         area = juli2;
     }
-}
+}        
